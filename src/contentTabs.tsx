@@ -4,8 +4,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import styled from "@emotion/styled";
-import { createTheme, ThemeProvider } from "@mui/material";
-import { Container } from "@mui/system";
+import { Container, createTheme, ThemeProvider } from "@mui/material";
 import Home from "./Homecomponents/Home";
 
 const Bg = styled.div`
@@ -18,6 +17,7 @@ const Image = styled.img`
   width: 100%;
   max-width: 350px;
   height: auto;
+  position: center center;
 `;
 
 const theme = createTheme({
@@ -65,31 +65,29 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box>
       <Bg>
         <Box paddingBottom={20} paddingTop={10}>
-          <Box marginLeft={130}>
-            <ThemeProvider theme={theme}>
-              <Tabs value={value} onChange={handleChange} centered>
-                <Tab label="Home" sx={{ fontSize: 20 }} />
-                <Tab label="Online Preliminary" sx={{ fontSize: 20 }} />
-                <Tab label="Onsite Contest" sx={{ fontSize: 20 }} />
-              </Tabs>
-            </ThemeProvider>
+          {/* <Box marginLeft={130}> */}
+          <ThemeProvider theme={theme}>
+            <Tabs value={value} onChange={handleChange} centered>
+              <Tab label="Home" sx={{ fontSize: 20 }} />
+              <Tab label="Online Preliminary" sx={{ fontSize: 20 }} />
+              <Tab label="Onsite Contest" sx={{ fontSize: 20 }} />
+            </Tabs>
+          </ThemeProvider>
+          {/* <Container> */}
+          <Box textAlign={"center"}>
+            <Box paddingY={5}>
+              <Image src="icpc_logo_fullfull.png"></Image>
+            </Box>
             <Container>
-              <Box paddingY={5}>
-                <Image src="icpc_logo_fullfull.png"></Image>
-              </Box>
-              <Typography
-                variant="h2"
-                color={"white"}
-                maxWidth={600}
-                align="center"
-              >
+              <Typography variant="h3" color={"white"} align="center">
                 2023 ACM ICPC Asia Hong Kong Regional
               </Typography>
             </Container>
           </Box>
+          {/* </Container> */}
         </Box>
       </Bg>
       <TabPanel value={value} index={0} setValue={setValue} />
