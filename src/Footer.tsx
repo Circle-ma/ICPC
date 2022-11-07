@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+// import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+// import EmailIcon from "@mui/icons-material/Email";
 
 const Image = styled.img`
   width: 100%;
@@ -45,11 +47,14 @@ function BasicGrid() {
           <Typography color={"gray"} variant="h5">
             CONTACT US
           </Typography>
+          {/* <EmailRoundedIcon></EmailRoundedIcon> */}
+          {/* <EmailIcon></EmailIcon> */}
           <Typography color={"gray"} variant="body1" marginTop={5}>
-            acmicpc@cse.cuhk.edu.hk
+            {/* <EmailIcon></EmailIcon> */}
+            📭 acmicpc@cse.cuhk.edu.hk
           </Typography>
           <Typography color={"gray"} variant="body1" marginY={5}>
-            Department of Computer Science and Engineering, Ho Sin-Hang
+            🏢 Department of Computer Science and Engineering, Ho Sin-Hang
             Engineering Building, The Chinese University of Hong Kong, Shatin,
             Hong Kong
           </Typography>
