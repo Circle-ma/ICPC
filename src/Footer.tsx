@@ -6,7 +6,7 @@ import LocationCityRoundedIcon from "@mui/icons-material/LocationCityRounded";
 
 const Image = styled.img`
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
 `;
 
@@ -39,9 +39,11 @@ function BasicGrid() {
             PRIMARY SPONSOR
           </Typography>
           <Image src="ibm.png"></Image>
+          <Box padding={1} display="inline"></Box>
           <Image src="ibm.png"></Image>
-          <Box paddingY={2}></Box>
+          <Box padding={1}></Box>
           <Image src="ibm.png"></Image>
+          <Box padding={1} display="inline"></Box>
           <Image src="ibm.png"></Image>
         </Grid>
 

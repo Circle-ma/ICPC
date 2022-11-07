@@ -70,10 +70,17 @@ export default function BasicTabs() {
         <Box paddingBottom={20} paddingTop={10}>
           {/* <Box marginLeft={130}> */}
           <ThemeProvider theme={theme}>
-            <Tabs value={value} onChange={handleChange} centered>
-              <Tab label="Home" sx={{ fontSize: 20 }} />
-              <Tab label="Online Preliminary" sx={{ fontSize: 20 }} />
-              <Tab label="Onsite Contest" sx={{ fontSize: 20 }} />
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              // centered
+              variant="scrollable"
+              scrollButtons
+              allowScrollButtonsMobile
+            >
+              <Tab label="Home" sx={{ fontSize: 18 }} />
+              <Tab label="Online Preliminary" sx={{ fontSize: 18 }} />
+              <Tab label="Onsite Contest" sx={{ fontSize: 18 }} />
             </Tabs>
           </ThemeProvider>
           {/* <Container> */}
