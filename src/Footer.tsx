@@ -40,6 +40,7 @@ function BasicGrid() {
           </Typography>
           <Image src="ibm.png"></Image>
           <Image src="ibm.png"></Image>
+          <Box paddingY={2}></Box>
           <Image src="ibm.png"></Image>
           <Image src="ibm.png"></Image>
         </Grid>
@@ -50,16 +51,25 @@ function BasicGrid() {
           </Typography>
           {/* <EmailRoundedIcon></EmailRoundedIcon> */}
           {/* <EmailIcon></EmailIcon> */}
+
           <Typography color={"gray"} variant="body1" marginTop={5}>
             <EmailRoundedIcon></EmailRoundedIcon>
+          </Typography>
+
+          <Typography color={"gray"} variant="body1">
             acmicpc@cse.cuhk.edu.hk
           </Typography>
-          <Typography color={"gray"} variant="body1" marginY={5}>
+
+          <Typography color={"gray"} variant="body1" marginTop={5}>
             <LocationCityRoundedIcon></LocationCityRoundedIcon>
+          </Typography>
+
+          <Typography color={"gray"} variant="body1">
             Department of Computer Science and Engineering, Ho Sin-Hang
             Engineering Building, The Chinese University of Hong Kong, Shatin,
             Hong Kong
           </Typography>
+          <Box paddingY={2}></Box>
           <CUImage src="engg.png"></CUImage>
         </Grid>
       </Grid>
