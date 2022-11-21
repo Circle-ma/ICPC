@@ -17,7 +17,7 @@ const Root = styled("div")(({ theme }) => ({
 function DividerText() {
   const content = (
     <Typography align="center">
-      21 November 2022: Registration is now open! Follow this link:
+      21 November 2022: Registration is opening soon! Follow this link:
       <Link href="https://icpc.global" underline="hover">
         https://icpc.global
       </Link>
@@ -25,6 +25,7 @@ function DividerText() {
   );
 
   return (
+    // <Container>
     <Root>
       {content}
       {/* <Divider></Divider> */}
@@ -36,6 +37,7 @@ function DividerText() {
       <Divider></Divider>
       {content} */}
     </Root>
+    // </Container>
   );
 }
 

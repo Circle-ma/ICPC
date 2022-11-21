@@ -8,22 +8,30 @@ import { Container, createTheme, ThemeProvider } from "@mui/material";
 import Home from "./Homecomponents/Home";
 
 const Bg = styled.div`
-  background-image: url(/icpc-bg.png);
+  background-image: url(wave.svg);
   background-size: cover;
-  background-position: center center;
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
 `;
 
 const Image = styled.img`
   width: 100%;
   max-width: 350px;
-  height: auto;
+  /* height: auto; */
+  position: center center;
+`;
+
+const Rubbish = styled.img`
+  width: 100%;
+  max-width: 10000px;
+  /* height: auto; */
   position: center center;
 `;
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#ffffff",
+      main: "#ffaa00",
     },
   },
 });
@@ -65,56 +73,64 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box>
+    <>
+      <Container>
+        <ThemeProvider theme={theme}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            // centered
+            variant="scrollable"
+            scrollButtons
+            allowScrollButtonsMobile
+          >
+            <Tab label="Home" sx={{ fontSize: 18 }} />
+            {/* <Tab label="Online Preliminary" sx={{ fontSize: 18 }} /> */}
+            {/* <Tab label="Onsite Contest" sx={{ fontSize: 18 }} /> */}
+          </Tabs>
+        </ThemeProvider>
+      </Container>
       <Bg>
-        <Box paddingBottom={10} paddingTop={10}>
-          {/* <Box marginLeft={130}> */}
-          <ThemeProvider theme={theme}>
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              // centered
-              variant="scrollable"
-              scrollButtons
-              allowScrollButtonsMobile
-            >
-              <Tab label="Home" sx={{ fontSize: 18 }} />
-              {/* <Tab label="Online Preliminary" sx={{ fontSize: 18 }} /> */}
-              {/* <Tab label="Onsite Contest" sx={{ fontSize: 18 }} /> */}
-            </Tabs>
-          </ThemeProvider>
-          {/* <Container> */}
+        <Container>
           <Box textAlign={"center"}>
-            <Box>
-              <Image src="icpc-logo-full.png"></Image>
-            </Box>
-            <Container>
-              <Typography
-                variant="h3"
-                color={"white"}
-                align="center"
-                marginTop={4}
-              >
-                2023 ACM ICPC Asia Hong Kong Regional
-              </Typography>
-              <Typography
-                variant="h4"
-                color={"white"}
-                align="center"
-                marginTop={8}
-              >
-                Contest Date: 14 January 2023 (Saturday)
-              </Typography>
-            </Container>
+            {/* <Image src="icpc-logo-full.png"></Image> */}
+            <Typography
+              variant="h3"
+              color="transparent"
+              sx={{
+                backgroundImage:
+                  "linear-gradient(90deg,#d5da98,#ed782a ,#ebb73d ,#cc4621)",
+                WebkitBackgroundClip: "text",
+              }}
+              // fontWeight="bold"
+              align="center"
+              marginTop={4}
+            >
+              2023 ACM ICPC Asia Hong Kong Regional
+            </Typography>
+            <Rubbish src="icpc2023.svg"></Rubbish>
+            <Typography
+              variant="h4"
+              color="transparent"
+              sx={{
+                backgroundImage:
+                  "linear-gradient(45deg,#0008ff -5%,#ff00ff 105%);",
+                WebkitBackgroundClip: "text",
+              }}
+              align="center"
+              // marginTop={8}
+              paddingBottom={4}
+            >
+              Contest Date: 14 January 2023 (Saturday)
+            </Typography>
           </Box>
-          {/* </Container> */}
-        </Box>
+        </Container>
       </Bg>
-      <TabPanel value={value} index={0} setValue={setValue} />
-
-      <TabPanel value={value} index={1} setValue={setValue} />
-
-      <TabPanel value={value} index={2} setValue={setValue} />
-    </Box>
+      <Container>
+        <TabPanel value={value} index={0} setValue={setValue} />
+        <TabPanel value={value} index={1} setValue={setValue} />
+        <TabPanel value={value} index={2} setValue={setValue} />
+      </Container>
+    </>
   );
 }

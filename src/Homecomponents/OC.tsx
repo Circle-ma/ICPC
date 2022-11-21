@@ -33,7 +33,8 @@ function ColumnsGrid() {
           <Grid container>
             <Grid xs={12} sm={6}>
               <Typography
-                fontSize={15}
+                sx={{ textDecoration: "underline" }}
+                fontSize={18}
                 fontWeight="bold"
                 marginTop={2}
                 align="center"
@@ -83,8 +84,9 @@ function ColumnsGrid() {
           <Grid container>
             <Grid xs={12} sm={6}>
               <Typography
-                fontSize={15}
+                fontSize={18}
                 fontWeight="bold"
+                fontStyle="italic"
                 marginTop={2}
                 align="center"
               >
@@ -148,8 +150,9 @@ function ColumnsGrid() {
           <Grid container>
             <Grid xs={12} sm={6}>
               <Typography
-                fontSize={15}
+                fontSize={18}
                 fontWeight="bold"
+                // fontStyle="oblique"
                 marginTop={4}
                 align="center"
               >
