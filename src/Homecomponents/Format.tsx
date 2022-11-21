@@ -16,23 +16,34 @@ export default function Format() {
       >
         Format
       </Typography>
+      <Box marginY={5}></Box>
       <Container>
         <Grid container>
-          <Grid xs={6}>
-            <Typography fontWeight={"bold"} align="center">
-              Hong Kong teams:
-            </Typography>
-            <Typography fontWeight={"bold"} align="center" marginTop={3}>
-              Non-Hong Kong teams:
-            </Typography>
+          <Grid xs={12}>
+            <Grid container>
+              <Grid xs={12} sm={6}>
+                <Typography fontWeight={"bold"} align="center">
+                  Hong Kong teams:
+                </Typography>
+              </Grid>
+              <Grid xs={12} sm={6}>
+                <Typography align="center">
+                  Onsite contest at The Chinese University of Hong Kong
+                </Typography>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid>
-            <Typography align="center">
-              Onsite contest at The Chinese University of Hong Kong
-            </Typography>
-            <Typography align="center" marginTop={3}>
-              Online contest
-            </Typography>
+          <Grid xs={12}>
+            <Grid container>
+              <Grid xs={12} sm={6}>
+                <Typography fontWeight={"bold"} align="center">
+                  Non-Hong Kong teams:
+                </Typography>
+              </Grid>
+              <Grid xs={12} sm={6}>
+                <Typography align="center">Online contest</Typography>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Container>

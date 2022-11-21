@@ -29,9 +29,9 @@ function ColumnsGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
-        <Grid xs={6}>
+        <Grid xs={12} sm={6}>
           <Grid container>
-            <Grid xs={6}>
+            <Grid xs={12} sm={6}>
               <Typography
                 fontSize={15}
                 fontWeight="bold"
@@ -41,7 +41,7 @@ function ColumnsGrid() {
                 Regional Contest Director
               </Typography>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={12} sm={6}>
               <Typography fontSize={15} marginTop={2} align="center">
                 Siu On Chan
               </Typography>
@@ -79,9 +79,9 @@ function ColumnsGrid() {
             </Grid>
           </Grid>
         </Grid> */}
-        <Grid xs={6}>
+        <Grid xs={12} sm={6}>
           <Grid container>
-            <Grid xs={6}>
+            <Grid xs={12} sm={6}>
               <Typography
                 fontSize={15}
                 fontWeight="bold"
@@ -91,7 +91,7 @@ function ColumnsGrid() {
                 Other Committee Members
               </Typography>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={12} sm={6}>
               <Typography fontSize={15} marginTop={2} align="center">
                 Jimmy Lee
               </Typography>
@@ -144,9 +144,9 @@ function ColumnsGrid() {
             </Grid>
           </Grid>
         </Grid> */}
-        <Grid xs={6}>
+        <Grid xs={12} sm={6}>
           <Grid container>
-            <Grid xs={6}>
+            <Grid xs={12} sm={6}>
               <Typography
                 fontSize={15}
                 fontWeight="bold"
@@ -156,7 +156,7 @@ function ColumnsGrid() {
                 Webmasters
               </Typography>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={12} sm={6}>
               <Typography fontSize={15} marginTop={4} align="center">
                 Yu Ying Ma
               </Typography>
