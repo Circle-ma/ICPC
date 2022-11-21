@@ -95,7 +95,7 @@ export default function BasicTabs() {
           <Box textAlign={"center"}>
             {/* <Image src="icpc-logo-full.png"></Image> */}
             <Typography
-              variant="h3"
+              variant="h5"
               color="transparent"
               sx={{
                 backgroundImage:
@@ -110,7 +110,7 @@ export default function BasicTabs() {
             </Typography>
             <Rubbish src="icpc2023.svg"></Rubbish>
             <Typography
-              variant="h4"
+              variant="h6"
               color="transparent"
               sx={{
                 backgroundImage:
