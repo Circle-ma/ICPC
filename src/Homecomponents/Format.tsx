@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 
 export default function Format() {
   return (
@@ -16,24 +16,26 @@ export default function Format() {
       >
         Format
       </Typography>
-      {/* <Typography align="center">
-        Hong Kong teams: Onsite contest at The Chinese University of Hong Kong
-      </Typography>
-      <Typography align="center">
-        Non-Hong Kong teams: Online contest
-      </Typography> */}
-      <Grid container>
-        <Grid xs={6}>
-          <Typography align="center">Hong Kong teams:</Typography>
-          <Typography align="center">Non-Hong Kong teams:</Typography>
+      <Container>
+        <Grid container>
+          <Grid xs={6}>
+            <Typography fontWeight={"bold"} align="center">
+              Hong Kong teams:
+            </Typography>
+            <Typography fontWeight={"bold"} align="center" marginTop={3}>
+              Non-Hong Kong teams:
+            </Typography>
+          </Grid>
+          <Grid>
+            <Typography align="center">
+              Onsite contest at The Chinese University of Hong Kong
+            </Typography>
+            <Typography align="center" marginTop={3}>
+              Online contest
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid xs={6}>
-          <Typography align="center">
-            Onsite contest at The Chinese University of Hong Kong
-          </Typography>
-          <Typography align="center">Online contest</Typography>
-        </Grid>
-      </Grid>
+      </Container>
       <Box marginY={5}></Box>
       <Divider />
     </>

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Link, Typography } from "@mui/material";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LocationCityRoundedIcon from "@mui/icons-material/LocationCityRounded";
 // import EmailIcon from "@mui/icons-material/Email";
@@ -30,7 +30,7 @@ function BasicGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
-        <Grid xs={6}>
+        {/* <Grid xs={6}>
           <Typography color={"gray"} variant="h5">
             PRIMARY SPONSOR
           </Typography>
@@ -45,9 +45,9 @@ function BasicGrid() {
           <Image src="ibm.png"></Image>
           <Box padding={1} display="inline"></Box>
           <Image src="ibm.png"></Image>
-        </Grid>
+        </Grid> */}
 
-        <Grid xs={6}>
+        <Grid>
           <Typography color={"gray"} variant="h5">
             CONTACT US
           </Typography>
@@ -58,9 +58,13 @@ function BasicGrid() {
             <EmailRoundedIcon></EmailRoundedIcon>
           </Typography>
 
-          <Typography color={"gray"} variant="body1">
-            acmicpc@cse.cuhk.edu.hk
-          </Typography>
+          <Link href="mailto:icpc2023@cse.cuhk.edu.hk">
+            icpc2023@cse.cuhk.edu.hk
+          </Link>
+
+          {/* <Typography color={"gray"} variant="body1">
+            icpc2023@cse.cuhk.edu.hk
+          </Typography> */}
 
           <Typography color={"gray"} variant="body1" marginTop={5}>
             <LocationCityRoundedIcon></LocationCityRoundedIcon>
@@ -72,7 +76,7 @@ function BasicGrid() {
             Hong Kong
           </Typography>
           <Box paddingY={2}></Box>
-          <CUImage src="engg.png"></CUImage>
+          <CUImage src="cuhk.jpg"></CUImage>
         </Grid>
       </Grid>
     </Box>

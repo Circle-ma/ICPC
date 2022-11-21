@@ -86,7 +86,7 @@ export default function BasicTabs() {
           {/* <Container> */}
           <Box textAlign={"center"}>
             <Box>
-              <Image src="icpc_logo_fullfull.png"></Image>
+              <Image src="icpc-logo-full.png"></Image>
             </Box>
             <Container>
               <Typography
