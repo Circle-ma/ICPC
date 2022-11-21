@@ -46,7 +46,7 @@ function BasicGrid() {
           <Box padding={1} display="inline"></Box>
           <Image src="ibm.png"></Image>
         </Grid> */}
-      // {/* <Grid> */}
+      {/* <Grid> */}
       <Typography color={"gray"} variant="h5">
         CONTACT US
       </Typography>
