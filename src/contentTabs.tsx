@@ -67,7 +67,7 @@ export default function BasicTabs() {
   return (
     <Box>
       <Bg>
-        <Box paddingBottom={20} paddingTop={10}>
+        <Box paddingBottom={10} paddingTop={10}>
           {/* <Box marginLeft={130}> */}
           <ThemeProvider theme={theme}>
             <Tabs
@@ -79,18 +79,31 @@ export default function BasicTabs() {
               allowScrollButtonsMobile
             >
               <Tab label="Home" sx={{ fontSize: 18 }} />
-              <Tab label="Online Preliminary" sx={{ fontSize: 18 }} />
-              <Tab label="Onsite Contest" sx={{ fontSize: 18 }} />
+              {/* <Tab label="Online Preliminary" sx={{ fontSize: 18 }} /> */}
+              {/* <Tab label="Onsite Contest" sx={{ fontSize: 18 }} /> */}
             </Tabs>
           </ThemeProvider>
           {/* <Container> */}
           <Box textAlign={"center"}>
-            <Box paddingY={5}>
+            <Box>
               <Image src="icpc_logo_fullfull.png"></Image>
             </Box>
             <Container>
-              <Typography variant="h3" color={"white"} align="center">
+              <Typography
+                variant="h3"
+                color={"white"}
+                align="center"
+                marginTop={4}
+              >
                 2023 ACM ICPC Asia Hong Kong Regional
+              </Typography>
+              <Typography
+                variant="h4"
+                color={"white"}
+                align="center"
+                marginTop={8}
+              >
+                Contest Date: 14 January 2023 (Saturday)
               </Typography>
             </Container>
           </Box>
