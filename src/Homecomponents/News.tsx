@@ -18,8 +18,11 @@ function DividerText() {
   const content = (
     <Typography align="center">
       21 November 2022: Registration is opening soon! Follow this link:
-      <Link href="https://icpc.global" underline="hover">
-        https://icpc.global
+      <Link
+        href="https://icpc.global/regionals/finder/HongKong-City-2022"
+        underline="hover"
+      >
+        https://icpc.global/regionals/finder/HongKong-City-2022
       </Link>
     </Typography>
   );

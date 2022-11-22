@@ -74,7 +74,7 @@ export default function BasicTabs() {
 
   return (
     <>
-      <Container>
+      {/* <Container>
         <ThemeProvider theme={theme}>
           <Tabs
             value={value}
@@ -85,16 +85,16 @@ export default function BasicTabs() {
             allowScrollButtonsMobile
           >
             <Tab label="Home" sx={{ fontSize: 18 }} />
-            {/* <Tab label="Online Preliminary" sx={{ fontSize: 18 }} /> */}
-            {/* <Tab label="Onsite Contest" sx={{ fontSize: 18 }} /> */}
+            <Tab label="Online Preliminary" sx={{ fontSize: 18 }} />
+            <Tab label="Onsite Contest" sx={{ fontSize: 18 }} />
           </Tabs>
         </ThemeProvider>
-      </Container>
+      </Container> */}
       <Bg>
         <Container>
           <Box textAlign={"center"}>
             {/* <Image src="icpc-logo-full.png"></Image> */}
-            <Typography
+            {/* <Typography
               variant="h5"
               color="transparent"
               sx={{
@@ -106,8 +106,8 @@ export default function BasicTabs() {
               align="center"
               marginTop={4}
             >
-              2023 ACM ICPC Asia Hong Kong Regional
-            </Typography>
+              2023 ICPC Asia Hong Kong Regional
+            </Typography> */}
             <Rubbish src="icpc2023.svg"></Rubbish>
             <Typography
               variant="h6"

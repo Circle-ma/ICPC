@@ -1,11 +1,11 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Awards from "./Awards";
 import Fee from "./Fee";
 import Format from "./Format";
 import News from "./News";
 import OC from "./OC";
 import Quota from "./Quota";
-import BasicTimeline from "./timeLine";
+// import BasicTimeline from "./timeLine";
 
 interface HomeProps {
   setValue: (value: React.SetStateAction<number>) => void;

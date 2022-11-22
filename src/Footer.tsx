@@ -16,6 +16,11 @@ const CUImage = styled.img`
   height: auto;
 `;
 
+const Bg = styled.div`
+  background-color: white;
+  max-width: 420px;
+`;
+
 export default function Footer() {
   return (
     <Box sx={{ backgroundColor: "#1B1C1D" }} paddingBottom={20} paddingTop={5}>
@@ -75,11 +80,13 @@ function BasicGrid() {
         </Grid>
         <Grid xs={12} sm={6}>
           {/* <Box sx={{ display: "inline" }} paddingX={2}></Box> */}
-          <CUImage src="cselogo.png"></CUImage>
+          <Bg>
+            <CUImage src="cselogo.png"></CUImage>
+          </Bg>
         </Grid>
       </Grid>
       {/* </Grid> */}
-      // {/* </Grid> */}
+      {/* </Grid> */}
     </Box>
   );
 }
